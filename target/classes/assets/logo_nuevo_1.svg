@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <style>
+      .bg-badge { fill: #161F2E; stroke: #00B4D8; stroke-width: 24; }
+      .bg-ring  { fill: none; stroke: #203348; stroke-width: 8; }
+      .fur-dark { fill: #723C1A; stroke: #261307; stroke-width: 14; stroke-linejoin: round; }
+      .fur-main { fill: #9E5828; stroke: #261307; stroke-width: 14; stroke-linejoin: round; stroke-linecap: round; }
+      .fur-cream{ fill: #FBE6C4; stroke: #261307; stroke-width: 12; stroke-linejoin: round; stroke-linecap: round; }
+      .fur-ear-in{ fill: #E8A88A; stroke: #261307; stroke-width: 10; }
+      .outline  { stroke: #261307; stroke-width: 14; stroke-linecap: round; stroke-linejoin: round; }
+      .teeth    { fill: #FFFFFF; stroke: #261307; stroke-width: 10; stroke-linejoin: round; }
+      .nose     { fill: #261307; }
+      .eye-pupil{ fill: #261307; }
+      .eye-shine{ fill: #FFFFFF; }
+      .accent   { fill: #00B4D8; stroke: #261307; stroke-width: 14; stroke-linejoin: round; stroke-linecap: round; }
+      .accent-dark { fill: #0088A8; stroke: #261307; stroke-width: 12; }
+      .tail-grid{ stroke: #542B12; stroke-width: 8; stroke-linecap: round; }
+    </style>
+  </defs>
+
+  <!-- Insignia circular de fondo (para contraste sobre fondo oscuro) -->
+  <circle class="bg-badge" cx="512" cy="512" r="480" />
+  <circle class="bg-ring" cx="512" cy="512" r="450" />
+
+  <!-- Cola ancha de castor -->
+  <g id="tail">
+    <ellipse class="fur-dark" cx="750" cy="690" rx="140" ry="85" transform="rotate(25 750 690)" />
+    <!-- Cuadrícula / textura plana de la cola -->
+    <line class="tail-grid" x1="650" y1="660" x2="840" y2="740" />
+    <line class="tail-grid" x1="670" y1="620" x2="860" y2="700" />
+    <line class="tail-grid" x1="690" y1="730" x2="820" y2="640" />
+    <line class="tail-grid" x1="730" y1="770" x2="850" y2="680" />
+  </g>
+
+  <!-- Patas traseras -->
+  <ellipse class="fur-dark" cx="360" cy="800" rx="75" ry="40" />
+  <ellipse class="fur-dark" cx="620" cy="800" rx="75" ry="40" />
+
+  <!-- Cuerpo redondeado -->
+  <ellipse class="fur-main" cx="490" cy="650" rx="195" ry="185" />
+  <!-- Panza clara -->
+  <ellipse class="fur-cream" cx="490" cy="665" rx="130" ry="135" />
+
+  <!-- Orejas redondeadas -->
+  <g id="ears">
+    <circle class="fur-main" cx="350" cy="310" r="55" />
+    <circle class="fur-ear-in" cx="350" cy="310" r="32" />
+    <circle class="fur-main" cx="630" cy="310" r="55" />
+    <circle class="fur-ear-in" cx="630" cy="310" r="32" />
+  </g>
+
+  <!-- Cabeza redondeada y tierna -->
+  <circle class="fur-main" cx="490" cy="420" r="175" />
+
+  <!-- Mejillas / Hocico crema -->
+  <ellipse class="fur-cream" cx="435" cy="475" rx="75" ry="60" />
+  <ellipse class="fur-cream" cx="545" cy="475" rx="75" ry="60" />
+
+  <!-- Dos dientes frontales planos blancos -->
+  <rect class="teeth" x="455" y="505" width="32" height="46" rx="6" />
+  <rect class="teeth" x="493" y="505" width="32" height="46" rx="6" />
+  <!-- Sonrisa tierna -->
+  <path d="M 405 470 Q 435 505 480 495 Q 525 505 575 470" fill="none" stroke="#261307" stroke-width="12" stroke-linecap="round" />
+
+  <!-- Nariz ovalada -->
+  <ellipse class="nose" cx="490" cy="445" rx="34" ry="24" />
+  <ellipse cx="480" cy="438" rx="10" ry="6" fill="#FFFFFF" opacity="0.6" />
+
+  <!-- Ojos grandes y expresivos -->
+  <ellipse class="eye-pupil" cx="410" cy="375" rx="32" ry="42" />
+  <circle class="eye-shine" cx="400" cy="360" r="14" />
+  <circle class="eye-shine" cx="422" cy="388" r="7" />
+  <ellipse class="eye-pupil" cx="570" cy="375" rx="32" ry="42" />
+  <circle class="eye-shine" cx="560" cy="360" r="14" />
+  <circle class="eye-shine" cx="582" cy="388" r="7" />
+
+  <!-- Cejas expresivas -->
+  <path d="M 385 320 Q 415 310 435 325" fill="none" stroke="#261307" stroke-width="10" stroke-linecap="round" />
+  <path d="M 545 325 Q 565 310 595 320" fill="none" stroke="#261307" stroke-width="10" stroke-linecap="round" />
+
+  <!-- Variante 1: Llave inglesa cian y patitas -->
+  <!-- Llave inglesa en ángulo -->
+  <g transform="rotate(-20 680 580)">
+    <!-- Mango de la llave -->
+    <rect class="accent" x="655" y="460" width="45" height="240" rx="16" />
+    <!-- Cabeza de la llave -->
+    <path class="accent" d="M 630 460 C 630 400, 725 400, 725 460 L 705 460 L 705 435 L 650 435 L 650 460 Z" />
+    <circle class="accent-dark" cx="677" y="660" r="10" />
+  </g>
+  <!-- Patita izquierda apoyada en la panza -->
+  <ellipse class="fur-main" cx="350" cy="640" rx="45" ry="36" transform="rotate(20 350 640)" />
+  <!-- Patita derecha sosteniendo la llave -->
+  <ellipse class="fur-main" cx="630" cy="610" rx="46" ry="38" transform="rotate(-15 630 610)" />
+</svg>

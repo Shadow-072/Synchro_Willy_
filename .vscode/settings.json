@@ -1,0 +1,14 @@
+{
+    "java.configuration.updateBuildConfiguration": "interactive",
+    "css.validate": false,
+    "css.lint.compatibleVendorPrefixes": "ignore",
+    "css.lint.vendorPrefix": "ignore",
+    "css.lint.unknownVendorSpecificProperties": "ignore",
+    "java.configuration.runtimes": [
+        {
+            "name": "JavaSE-17",
+            "path": "C:\\Users\\bry13\\.antigravity-ide\\extensions\\redhat.java-1.58.0-win32-x64\\jre\\25.0.4.1-win32-x86_64",
+            "default": true
+        }
+    ]
+}
